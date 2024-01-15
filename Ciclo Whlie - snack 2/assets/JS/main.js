@@ -6,8 +6,18 @@ function numberRandom(max, min){
 
 let numRandom = numberRandom(1, 100)
 
-let i = 0
+let userRandom = 0
 
-while (i !== numRandom){
-    
+while (userRandom !== numRandom){
+    userRandom = parseInt(prompt("Inserisci un numero tra 1 e 100;"))
+
+    if(userRandom > numRandom){
+        console.log("Il numero è troppo alto")
+        alert("Il numero è troppo alto")
+    } else if(userRandom < numRandom){
+        console.log("Il numero è troppo basso")
+        alert("Il numero è troppo basso")
+    } else {
+        console.log("Hai indovinato:")
+    }
 }
