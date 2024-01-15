@@ -14,10 +14,10 @@ while(addiction < 50){
     } else {
         numberHtml.push(numberUser)
 
-        addiction += numberUser[ i ]
-    }
+        addiction += numberUser[i]
 
-    i++
+        i++
+    }
 }
 
 console.log(`La somma è: ${addiction}`, numberHtml)
